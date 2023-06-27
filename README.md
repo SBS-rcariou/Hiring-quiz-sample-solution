@@ -56,10 +56,10 @@ in constant time. This can be validated by running
 Functional and performance tests are covered by [tests](tests). System testing consisted 
 in checking the installation steps on Ubuntu.
 
-### Error handling
+## Error handling
 No exception handling is used. Assert statements are used to validate invariants. 
 
-### Logging
+## Logging
 No logging is done. If needed, the 
 internal bins structure could be inspected by placing the following line in the method 
 `DataCapture.build_stats()`:
