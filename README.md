@@ -4,7 +4,7 @@
 The code can be used in one of the following ways.
 * For a quick glance, check out [collect.py](quiz/collect.py).  
 * To deploy in a virtual environment with PIP, copy the entire directory locally, in any location. 
-Using the command line, move within the directory and check that it looks like depicted above.
+Using the command line, move within the directory.
 Execute PIP from the command line within the directory.
 
     `pip install .`
@@ -56,15 +56,9 @@ in constant time. This can be validated by running
 Functional and performance tests are covered by [tests](tests). System testing consisted 
 in checking the installation steps on Ubuntu.
 
-## Limitations and optimization
-Use a _numpy_ array and the _numpy.bincount()_ operation.
-
-## Coding guideline
 ### Error handling
 No exception handling is used. Assert statements are used to validate invariants. 
-They will not impact production as they could be discarded when the 
-Python interpreter is called with the -O flag.
- 
+
 ### Logging
 No logging is done. If needed, the 
 internal bins structure could be inspected by placing the following line in the method 
